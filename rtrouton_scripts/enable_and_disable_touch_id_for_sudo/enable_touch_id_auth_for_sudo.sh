@@ -15,6 +15,9 @@
 #
 # /etc/pam.d/sudo_local_1696683022.bak
 
+# due to DisplayLink bug, we need to execute this cmd to solve TuchId UI won't be shown
+defaults write com.apple.security.authorization ignoreArd -bool TRUE
+
 # Set exit status
 
 exitCode=0
